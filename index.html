@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>Image Puzzle</title>
+    <title>Crops For the Future</title>
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/image-puzzle.css" rel="stylesheet" />
     <script src="js/image-puzzle.js"></script>
@@ -10,7 +10,7 @@
 
 <body>
     <div id="collage">
-        <h2>Image Puzzle</h2>
+        <h2>Crops For the Future</h2>
         <hr />
         <div id="playPanel" style="padding:5px;display:none;">
             <h3 id="imgTitle"></h3>
@@ -19,8 +19,6 @@
                 <ul id="sortable" class="sortable"></ul>
                 <div id="actualImageBox">
                     <div id="stepBox">
-                        <div>Steps:</div>
-                        <div class="stepCount">0</div>
                     </div>
                     <div id="timeBox">
                         Time Taken: <span id="timerPanel"></span> secs
@@ -45,7 +43,6 @@
             <div style="background-color: #fc9e9e; padding: 5px 10px 20px 10px; text-align: center; ">
                 <h2 style="text-align:center">Game Over!!</h2>
                 Congratulations!! <br /> You have completed this picture.
-                <br /> Steps: <span class="stepCount">0</span> steps.
                 <br /> Time Taken: <span class="timeCount">0</span> seconds<br />
                 <div>
                     <button type="button" onclick="window.location.reload(true);">Play Again</button>
@@ -55,11 +52,17 @@
 
         <script>
             var images = [
-                { src: 'images/london-bridge.jpg', title: 'London Bridge' },
-                { src: 'images/lotus-temple.jpg', title: 'Lotus Temple' },
-                { src: 'images/qutub-minar.jpg', title: 'Qutub Minar' },
-                { src: 'images/statue-of-liberty.jpg', title: 'Statue Of Liberty' },
-                { src: 'images/taj-mahal.jpg', title: 'Taj Mahal' }
+                { src: 'images/Annonna.jpg', title: 'Annonnag' },
+                { src: 'images/AsamGelugor.jpg', title: 'Asam Gelugor' },
+                { src: 'images/BungaTelang.jpg', title: 'Bunga Telang' },
+                { src: 'images/Dabai.jpg', title: 'Dabai' },
+                { src: 'images/Gingertorchflower.jpg', title: 'Ginger torch flower' },
+                { src: 'images/Kelidang.jpg', title: 'Kelidang' },
+                { src: 'images/PassionFruit.jpg', title: 'Passion Fruit' },
+                { src: 'images/PeriaKatak.jpg', title: 'PeriaKatak' },
+                { src: 'images/Terungpipit.jpg', title: 'Terungpipit' },
+                { src: 'images/Yambean.jpg', title: 'Yambean.jpg' },
+                { src: 'images/kedondong.jpg', title: 'kedondong' },
             ];
 
             window.onload = function () {
